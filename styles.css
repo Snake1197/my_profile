@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 35px;
+  background-image: linear-gradient(181deg, #504349 10%, #002b56 90%);
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header i {
+  font-size: 30px;
+  color: white;
+}
+
+.seccion-principal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+.seccion-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 760px;
+  margin: 50px 0 50px 0;
+  height: fit-content;
+  gap: 50px;
+}
+
+.acerca-de {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.acerca-de h2 {
+  margin-bottom: 30px;
+}
+
+.acerca-de p {
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.acerca-imagen img {
+  height: 320px;
+  border-radius: 20% 80% 23% 77% / 84% 22% 78% 16%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-self: self-end;
+  bottom: 0;
+  left: 0;
+}
+
+.seccion-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 20px;
+  min-height: 300px;
+  height: fit-content;
+  width: min-content;
+  border: solid 1px #dbe6e9;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card img {
+  height: 150px;
+  width: 280px;
+  border-radius: 11% 89% 10% 90% / 94% 9% 91% 6%;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: rgb(186, 5, 5);
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+img {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(181deg, #504349 10%, #002b56 90%);
+    text-align: center;
+    top: 70px;
+    left: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+    padding: 50px 0;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .seccion-1 {
+    padding: 0 60px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .seccion-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .seccion-2 .card img {
+    max-width: 200px;
+  }
+}
+/* ------------- CSS General ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6063;
+  background-color: #eaedf0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    width: 250px;
+  }
+  .form-row button {
+    align-self: center;
+  }
+}
+@media (max-width: 900px) {
+  .form-row button {
+    width: 100%;
+  }
+}
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  max-width: 660px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */

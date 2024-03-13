@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mi Perfil</title>
+   <script src="https://kit.fontawesome.com/e8124cae5c.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./styles.css">
+   <script src="./script.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+         <a href=""><i class="fa-solid fa-cloud-bolt"></i></a>
+         <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+               <li><a href="">Inicio</a></li>
+               <li><a href="">Acerca de mí</a></li>
+               <li><a href="">Trabajos</a></li>
+               <li><a href="">Servicios</a></li>
+               <li><a href="">Contacto</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main class="seccion-principal">
+         <section class="seccion-1">
+            <div class="acerca-de">
+               <h2>Conoce a "Leo"</h2>
+               <p class="parrafo1"><strong>Hola!</strong> Mi nombre es <strong>Leandro</strong>, pero me conocen como
+                  <i>"Leo"</i> , soy
+                  de Talara (Piura)
+               </p>
+               <p class="parrafo2">Soy <strong>Ingeniero Industrial y de Sistemas</strong> y, aunque actualmente me
+                  desempeño como
+                  analista de aplicaciones, lo que me gusta y apasiona es el desarrollo.</p>
+               <p>Me considero una persona reservada, pero siempre <strong>dispuesto a apoyar y compartir</strong> mis
+                  conocimientos a
+                  quién lo necesite.</p>
+            </div>
+            <div class="acerca-imagen">
+               <img src="./img/profile.jpg" alt="imagen personal" height="200px">
+            </div>
+         </section>
+         <section class="seccion-2">
+            <article class="card">
+               <img src="./img/first-article.jpg" alt="">
+               <p>Participé en el desarrollo de la banca por internet de Caja Cuzco como maquetador front.</p>
+            </article>
+            <article class="card">
+               <img src="./img/second-article.jpg" alt="">
+               <p>Actualmente me desempeño como analista de aplicaciones académicas, interactuando con la base datos.
+               </p>
+            </article>
+         </section>
+      </main>
+      <footer class="form-header">
+         <h1>Contacto</h1>
+         <p><em>¡Esperamos tu consulta!</em></p>
+         <form action="" method="get" class="formulario" id="form">
+            <div class="form-row">
+               <label for="nombre">Nombre *</label>
+               <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div class="form-row">
+               <label for="email">Email *</label>
+               <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required />
+            </div>
+            <div class="form-row">
+               <label for="mensaje">Mensaje</label>
+               <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <p class="alertas" id="alertas"></p>
+            <div class="form-row">
+               <button type="submit" id="submit">Enviar</button>
+            </div>
+         </form>
+      </footer>
+
+   </div>
+</body>
+
+</html>
